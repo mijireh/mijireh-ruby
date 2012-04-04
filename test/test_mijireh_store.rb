@@ -14,5 +14,6 @@ class MijirehStoreTest < Test::Unit::TestCase
   def test_retrieve
     store = Mijireh::Store.retrieve
     assert_not_nil store
+    assert_not_nil store.name
   end
 end
